@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكفاءة المتميزة للتبريد والتكييف</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #53c8e6;
+            --primary-dark: #254898;
+            --secondary: #1dc1e2;
+            --secondary-dark: #233f92;
+            --gray: #606161;
+            --light-gray: #828282;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            direction: rtl;
+        }
+        
+        /* Header Styles */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+        }
+        .navbar-brand img {
+            height: 60px;
+            border-radius: 20px;
+        }
+        .nav-link {
+            color: #0d6a7a !important;
+            font-weight: 600;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+        .nav-link:hover {
+            color: #0a9c9c !important;
+        }
+        .dropdown-menu {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            min-width: 200px;
+            border: none;
+        }
+        .dropdown-item {
+            color: #0d6a7a;
+            font-weight: 500;
+            padding: 8px 20px;
+            text-align: right;
+        }
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #0a9c9c;
+        }
+        .phone-number {
+            background-color: #0d9d92;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+        .phone-number:hover {
+            background-color: #0a8278;
+            color: white;
+        }
+        .phone-icon {
+            margin-left: 5px;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581502335766-48f7c5e7e640?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        
+        /* Services */
+        .services {
+            padding: 50px 0;
+        }
+        
+        .service-card {
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 24px;
+        }
+        
+        /* Steps */
+        .steps {
+            background-color: var(--primary);
+            color: white;
+            padding: 50px 0;
+        }
+        
+        .step-item {
+            background-color: white;
+            color: var(--gray);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .step-img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        /* AC Types */
+        .ac-types {
+            padding: 50px 0;
+        }
+        
+        .ac-card {
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .ac-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .ac-content {
+            padding: 20px;
+        }
+        
+        /* Maintenance */
+        .maintenance {
+            background-color: var(--secondary-dark);
+            color: white;
+            padding: 50px 0;
+        }
+        
+        /* Why Choose Us */
+        .why-us {
+            padding: 50px 0;
+        }
+        
+        .why-card {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            height: 100%;
+        }
+        
+        .why-icon {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        /* CTA */
+        .cta {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-logo img {
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        .social-icons {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html" title="الكفاءه المتميزه لأعمال التكييف">
+                <img src="./Screenshot 2025-04-25 020342.png" alt="شعار الكفاءه المتميزه لأعمال التكييف" class="img-fluid">
+            </a>
+            
+            <!-- Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Dropdown Menu for Services -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="خدمات تنظيف المكيفات">
+                            خدمات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#cleaning" title="تنظيف مكيفات سبليت">تنظيف مكيفات سبليت</a></li>
+                            <li><a class="dropdown-item" href="#maintenance" title="صيانة وإصلاح المكيفات">صيانة وإصلاح المكيفات</a></li>
+                            <li><a class="dropdown-item" href="#installation" title="تركيب مكيفات">تركيب مكيفات</a></li>
+                            <li><a class="dropdown-item" href="#disinfection" title="تعقيم وتطهير المكيفات">تعقيم وتطهير المكيفات</a></li>
+                            <li><a class="dropdown-item" href="#central-ac" title="خدمات المكيفات المركزية">خدمات المكيفات المركزية</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" title="من نحن الكفاءه المتميزه لأعمال التكييف">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" title="اتصل بنا للحصول على خدمات تنظيف المكيفات">اتصل بنا</a>
+                    </li>
+                </ul>
+                
+                <a href="tel:0508068844" class="phone-number" title="اتصل الآن لخدمة تنظيف المكيفات">
+                    <span class="phone-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                    </span>
+                    0508068844
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1>خدمات تركيب مكيفات عالية الجودة</h1>
+                    <p>نعمل في الكفاءة المتميزة على تقديم خدمات احترافية لتركيب وصيانة أنظمة التكييف والتبريد، بأعلى معايير الجودة والسلامة والكفاءة لتوفير بيئة مريحة ومثالية لعملائنا</p>
+                    <a href="#" class="btn btn-primary btn-lg">اتصل بنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="text-center mb-5">احصل على تركيب مكيفات موثوق من فريقنا المتخصص</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h4>تركيب سريع ودقيق من قبل المكتب</h4>
+                        <p>فريق متخصص بخبرة عملية طويلة يضمن تركيب سريع ودقيق لمكيفات الهواء</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>حلول تبريد موفرة للطاقة</h4>
+                        <p>نقدم أنظمة تكييف موفرة للطاقة، تساعدك على خفض التكاليف، مع ضمان أداء متميز واستهلاك منخفض للطاقة</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>فريق عمل محترف وضمان</h4>
+                        <p>نوفر فريق عمل احترافي لتركيب المكيفات بكفاءة عالية، ونقدم ضمان شامل على جميع خدماتنا</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps">
+        <div class="container">
+            <h2 class="text-center mb-5">خطوات تركيب مكيفات بدقة وكفاءة</h2>
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="step-item">
+                        <h4>تحديد الموقع المناسب</h4>
+                        <p>يقوم فريقنا بتحديد أفضل موقع لتركيب المكيف، مراعيًا الاتجاهات المناسبة للهواء</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-4">
+                    <div class="step-item">
+                        <h4>تركيب الوحدات الداخلية والخارجية</h4>
+                        <p>بعد تحديد المواقع المناسبة، يقوم فريق العمل بتثبيت الوحدات الداخلية في المكان المحدد بعناية، ثم تركيب الوحدات الخارجية بشكل آمن</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-4">
+                    <div class="step-item">
+                        <h4>توصيل أنابيب وخطوط التبريد</h4>
+                        <p>بعد تركيب الوحدات، يتم ربط أنابيب التبريد وتمديد خطوط الطاقة والتحكم، نتبع المعايير الفنية في كل مرحلة للمحافظة على كفاءة المكيف</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="step-item">
+                        <h4>اختبار الأداء وإدارة التكييف النهائية</h4>
+                        <p>بعد الانتهاء من كل مراحل التركيب، يقوم فريقنا باختبار شامل للنظام للتأكد من عمل المكيفات بكفاءة، ونوضح للعميل كيفية التشغيل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AC Types Section -->
+    <section class="ac-types">
+        <div class="container">
+            <h2 class="text-center mb-5">أنواع مكيفات التي نقوم بتركيبها</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="ac-card">
+                        <img src=" " class="ac-img" alt="مكيفات سبليت">
+                        <div class="ac-content">
+                            <h4>مكيفات سبليت</h4>
+                            <p>تعد الأكثر شيوعاً واستخداماً، تتكون من وحدة داخلية تركب داخل المنزل ووحدة خارجية، ممتازة للغرف المنفصلة أو المساحات الصغيرة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ac-card">
+                        <img src="  " class="ac-img" alt="مكيفات الشباك">
+                        <div class="ac-content">
+                            <h4>مكيفات الشباك</h4>
+                            <p>خيار عملي وفعال من حيث التكلفة، يتم تركيبها مباشرة في النافذة أو الجدار، مناسبة للمساحات الصغيرة والمتوسطة</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ac-card">
+                        <img src="https://images.unsplash.com/photo-1599164192571-53dc1b22b4a3?ixlib=rb-4.0.3" class="ac-img" alt="أنظمة سقفية (دكت)">
+                        <div class="ac-content">
+                            <h4>أنظمة سقفية (دكت)</h4>
+                            <p>خيارات مثالية للمساحات الكبيرة، توفر تبريداً متساوياً في جميع أنحاء المكان، مثالية للمنشآت التجارية والمنازل كبيرة المساحة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maintenance Section -->
+    <section class="maintenance">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2>نصائح ضرورية بعد تركيب مكيفك</h2>
+                    <ul class="mt-4">
+                        <li class="mb-3">التحقق من تنظيف المكيف وتنظيف الفلاتر بشكل دوري، خاصة مع التغيرات الفصلية</li>
+                        <li class="mb-3">ضبط درجة الحرارة المناسبة لتوفير الطاقة وتحسين الأداء</li>
+                        <li class="mb-3">تأكد من عمل نظام التصريف بشكل جيد لمنع تراكم المياه وحدوث مشاكل</li>
+                        <li class="mb-3">اتصل بنا فوراً في حال ظهور أي أصوات غريبة أو تسرب للماء من المكيف</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1581775231616-0ef3e6a47867?ixlib=rb-4.0.3" class="img-fluid rounded" alt="صيانة المكيف">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="text-center mb-5">لماذا نحن الخيار الأفضل لتركيب مكيفاتك؟</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>فريق عمل مؤهل</h4>
+                        <p>خبراء معتمدون، يقدمون خدمة احترافية في تركيب المكيفات وصيانتها</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h4>مكيفات عالية الجودة</h4>
+                        <p>نحرص على توفير أفضل المنتجات من أبرز العلامات التجارية المعروفة</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4>أسعار منافسة</h4>
+                        <p>أفضل الأسعار مع أفضل المنتجات وأعلى جودة خدمة</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>خدمة عملاء متميزة</h4>
+                        <p>فريق دعم فني متواجد على مدار الساعة للرد على استفساراتكم</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="mb-4">احجز خدمة تركيب مكيف الآن</h2>
+            <p class="mb-4">سارع بحجز خدمة التركيب، واحصل على كل مزايا الموثوقية و الضمان. نقدم خدمات متكاملة من التركيب وصيانة على مدى عمر المكيف.</p>
+            <a href="#" class="btn btn-primary btn-lg">اتصل بنا</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="footer-logo">
+                        <img src="https://via.placeholder.com/150x50?text=الكفاءة+المتميزة" alt="الكفاءة المتميزة">
+                    </div>
+                    <h5>مؤسسة الكفاءة المتميزة للتكييف</h5>
+                    <p>شركة رائدة في تقديم خدمات التركيب والصيانة لأنظمة التبريد والتكييف</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>روابط</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">خدماتنا</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>اتصل بنا</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> المملكة العربية السعودية</p>
+                    <p><i class="fas fa-phone me-2"></i> +966 545 828 253</p>
+                    <p><i class="fas fa-phone me-2"></i> +966 569 406 956</p>
+                    <p><i class="fas fa-envelope me-2"></i> KAFAAALMETMIZA@GMAIL.COM</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center copyright">
+                <p>حقوق النشر © 2023 مؤسسة الكفاءة المتميزة للتبريد والتكييف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/966545828253" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add animation on scroll
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.service-card, .step-item, .ac-card, .why-card');
+            
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+                
+                // If element is in viewport
+                if(position.top < window.innerHeight && position.bottom >= 0) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        
+        // Initialize elements with fade effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.service-card, .step-item, .ac-card, .why-card');
+            
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            // Trigger scroll event to check initial viewport elements
+            window.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+</body>
+</html>
