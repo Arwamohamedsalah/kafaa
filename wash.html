@@ -10,352 +10,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #254898;
-            --secondary-color: #53c8e6;
-            --primary-dark: #233f92;
-            --secondary-light: #1dc1e2;
-            --gray-text: #606161;
-            --light-gray: #828282;
-        }
-        
-        body {
-            font-family: 'Cairo', sans-serif;
-            overflow-x: hidden;
-        }
-        
-        .navbar {
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 15px 0;
-        }
-        .navbar-brand img {
-            height: 60px;
-            border-radius: 20px;
-        }
-        .nav-link {
-            color: #0d6a7a !important;
-            font-weight: 600;
-            font-size: 18px;
-            margin: 0 10px;
-        }
-        .nav-link:hover {
-            color: #0a9c9c !important;
-        }
-        .dropdown-menu {
-            background-color: #ffffff;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 10px 0;
-            min-width: 200px;
-            border: none;
-        }
-        .dropdown-item {
-            color: #0d6a7a;
-            font-weight: 500;
-            padding: 8px 20px;
-            text-align: right;
-        }
-        .dropdown-item:hover {
-            background-color: #f8f9fa;
-            color: #0a9c9c;
-        }
-        .phone-number {
-            background-color: #0d9d92;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-        }
-        .phone-number:hover {
-            background-color: #0a8278;
-            color: white;
-        }
-        .phone-icon {
-            margin-left: 5px;
-        }
-        .hero-section {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x600');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            position: relative;
-            text-align: center;
-        }
-        
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .hero-title {
-            font-weight: 700;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: white;
-        }
-        
-        .hero-text {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
-        
-        .features-section {
-            padding: 60px 0;
-        }
-        
-        .feature-card {
-            border: 1px solid #eee;
-            border-radius: 10px;
-            padding: 25px;
-            height: 100%;
-            transition: all 0.3s;
-            text-align: center;
-        }
-        
-        .feature-card:hover {
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .feature-icon {
-            color: var(--secondary-color);
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .feature-title {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .feature-text {
-            color: var(--gray-text);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        
-        .process-section {
-            padding: 60px 0;
-            background-color: #f8f9fa;
-        }
-        
-        .process-step {
-            margin-bottom: 15px;
-        }
-        
-        .process-title {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        
-        .process-text {
-            color: var(--gray-text);
-        }
-        
-        .services-section {
-            padding: 60px 0;
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        .service-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 25px;
-            height: 100%;
-            transition: all 0.3s;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .service-icon {
-            color: var(--secondary-color);
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .service-title {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .service-text {
-            color: var(--gray-text);
-            font-size: 0.9rem;
-        }
-        
-        .cta-section {
-            padding: 60px 0;
-            text-align: center;
-            background-color: #f8f8f8;
-        }
-        
-        .cta-title {
-            color: var(--primary-color);
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-        
-        .cta-btn {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 10px 30px;
-            border-radius: 5px;
-            border: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-        
-        .cta-btn:hover {
-            background-color: var(--primary-color);
-            color: white;
-        }
-        
-        .footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 60px 0 30px;
-        }
-        
-        .footer-logo {
-            max-height: 60px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-title {
-            font-weight: 600;
-            margin-bottom: 20px;
-            font-size: 1.2rem;
-        }
-        
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 10px;
-            transition: all 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: var(--secondary-color);
-        }
-        
-        .footer-contact {
-            margin-bottom: 10px;
-        }
-        
-        .footer-contact i {
-            margin-left: 10px;
-            color: var(--secondary-color);
-        }
-        
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 20px;
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.7);
-        }
-        
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            text-decoration: none;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            z-index: 1000;
-            transition: all 0.3s;
-        }
-        
-        .whatsapp-float:hover {
-            background-color: #128c7e;
-            transform: scale(1.1);
-        }
-        
-        /* Media Queries */
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 1.8rem;
-            }
-            
-            .hero-text {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wash.css">
     <!-- Google Font - Cairo -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <!-- Logo -->
+
             <a class="navbar-brand" href="index.html" title="الكفاءه المتميزه لأعمال التكييف">
-                <img src="./Screenshot 2025-04-25 020342.png" alt="شعار الكفاءه المتميزه لأعمال التكييف" class="img-fluid">
+                <img src="pic/kafaa.jpg" alt="شعار الكفاءه المتميزه لأعمال التكييف" class="img-fluid">
             </a>
-            
-            <!-- Toggler for mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <!-- Menu Items -->
+
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <!-- Dropdown Menu for Services -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="خدمات تنظيف المكيفات">
+                        <a class="nav-link active" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" title="خدمات تنظيف المكيفات">
                             خدمات
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="#cleaning" title="تنظيف مكيفات سبليت">تنظيف مكيفات سبليت</a></li>
-                            <li><a class="dropdown-item" href="#maintenance" title="صيانة وإصلاح المكيفات">صيانة وإصلاح المكيفات</a></li>
-                            <li><a class="dropdown-item" href="#installation" title="تركيب مكيفات">تركيب مكيفات</a></li>
-                            <li><a class="dropdown-item" href="#disinfection" title="تعقيم وتطهير المكيفات">تعقيم وتطهير المكيفات</a></li>
-                            <li><a class="dropdown-item" href="#central-ac" title="خدمات المكيفات المركزية">خدمات المكيفات المركزية</a></li>
+                            <li><a class="dropdown-item" href="wash.html" title="تنظيف مكيفات سبليت">تنظيف مكيفات
+                                    سبليت</a></li>
+                            <li><a class="dropdown-item" href="#maintenance" title="صيانة وإصلاح المكيفات">صيانة وإصلاح
+                                    المكيفات</a></li>
+                            <li><a class="dropdown-item" href="installation.html" title="تركيب مكيفات">تركيب مكيفات</a></li>
+                            <li><a class="dropdown-item" href="#disinfection" title="تعقيم وتطهير المكيفات">تعقيم وتطهير
+                                    المكيفات</a></li>
+                            <li><a class="dropdown-item" href="#central-ac" title="خدمات المكيفات المركزية">خدمات
+                                    المكيفات المركزية</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" title="من نحن الكفاءه المتميزه لأعمال التكييف">من نحن</a>
+                        <a class="nav-link" href="about.html" title="من نحن الكفاءه المتميزه لأعمال التكييف">من نحن</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact" title="اتصل بنا للحصول على خدمات تنظيف المكيفات">اتصل بنا</a>
+                        <a class="nav-link" href="#contact" title="اتصل بنا للحصول على خدمات تنظيف المكيفات">اتصل
+                            بنا</a>
                     </li>
                 </ul>
-                
+
                 <a href="tel:0508068844" class="phone-number" title="اتصل الآن لخدمة تنظيف المكيفات">
-                    <span class="phone-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    <span class="phone-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                         </svg>
                     </span>
-                    0508068844
-                </a>
+                    0545828253 </a>
             </div>
         </div>
     </nav>
