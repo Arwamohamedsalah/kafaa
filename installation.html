@@ -62,14 +62,16 @@
 
     <section class="hero-install">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-8 mx-auto">
-                    <h1>خدمات تركيب مكيفات عالية الجودة</h1>
-                    <p>نعمل في الكفاءة المتميزة على تقديم خدمات احترافية لتركيب وصيانة أنظمة التكييف والتبريد، بأعلى معايير الجودة والسلامة والكفاءة لتوفير بيئة مريحة ومثالية لعملائنا</p>
-                    <a href="https://wa.me/966545828253" class="btn btn-primary" target="_blank">واتساب الآن <i class="fab fa-whatsapp"></i></a>
+                    <div class="hero-content">
+                    <h1 class="hero-title">خدمات تركيب مكيفات عالية الجودة</h1>
+                    <p class="hero-text">نعمل في الكفاءة المتميزة على تقديم خدمات احترافية لتركيب وصيانة أنظمة التكييف والتبريد، بأعلى معايير الجودة والسلامة والكفاءة لتوفير بيئة مريحة ومثالية لعملائنا</p>
+                    <button class="cta-btn">واتساب الآن</button>
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <section class="services">
@@ -140,7 +142,7 @@
         </div>
     </section>
 
-    <!-- AC Types Section -->
+  
     <section class="ac-types">
         <div class="container">
             <h2 class="text-center mb-5">أنواع مكيفات التي نقوم بتركيبها</h2>
@@ -176,7 +178,7 @@
         </div>
     </section>
 
-    <!-- Maintenance Section -->
+  
     <section class="maintenance">
         <div class="container">
             <div class="row align-items-center">
@@ -196,7 +198,7 @@
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
+  
     <section class="why-us">
         <div class="container">
             <h2 class="text-center mb-5">لماذا نحن الخيار الأفضل لتركيب مكيفاتك؟</h2>
@@ -241,7 +243,7 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+   
     <section class="cta">
         <div class="container">
             <h2 class="mb-4">احجز خدمة تركيب مكيف الآن</h2>
@@ -312,7 +314,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Add smooth scrolling
+    
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -323,14 +325,13 @@
             });
         });
         
-        // Add animation on scroll
+     
         window.addEventListener('scroll', function() {
             const elements = document.querySelectorAll('.service-card, .step-item, .ac-card, .why-card');
             
             elements.forEach(element => {
                 const position = element.getBoundingClientRect();
                 
-                // If element is in viewport
                 if(position.top < window.innerHeight && position.bottom >= 0) {
                     element.style.opacity = '1';
                     element.style.transform = 'translateY(0)';
@@ -338,7 +339,6 @@
             });
         });
         
-        // Initialize elements with fade effect
         document.addEventListener('DOMContentLoaded', function() {
             const elements = document.querySelectorAll('.service-card, .step-item, .ac-card, .why-card');
             
@@ -348,7 +348,6 @@
                 element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
             });
             
-            // Trigger scroll event to check initial viewport elements
             window.dispatchEvent(new Event('scroll'));
         });
     </script>

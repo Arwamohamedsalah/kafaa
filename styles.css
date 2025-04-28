@@ -1,4 +1,4 @@
-/* Improved Styles for Professional UI */
+
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
 
 :root {
@@ -18,7 +18,7 @@
     
 }
 
-/* Base Styles */
+
 body {
     font-family: 'Cairo', sans-serif;
     color: #606161;
@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Tajawal', sans-serif;
     font-weight: 700;
@@ -48,7 +48,6 @@ p {
     font-size: 1.1rem;
 }
 
-/* Section Styling */
 section {
     padding: var(--section-spacing) 0;
     position: relative;
@@ -79,7 +78,6 @@ section:not(:first-child)::before {
     padding: 0 20px;
 }
 
-/* Section Headers */
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
@@ -110,7 +108,7 @@ section:not(:first-child)::before {
     color: #606161;
 }
 
-/* Navbar */
+
 .navbar {
     background-color:white;
     box-shadow: var(--box-shadow);
@@ -204,7 +202,7 @@ section:not(:first-child)::before {
     margin-left: 10px;
 }
 
-/* Hero Section */
+
 #hero {
     background-size: cover;
     background-position: center;
@@ -279,7 +277,7 @@ section:not(:first-child)::before {
     justify-content: center;
 }
 
-/* Cards Styling */
+
 .card {
     border: none;
     border-radius: var(--border-radius);
@@ -317,7 +315,7 @@ section:not(:first-child)::before {
     object-fit: cover;
 }
 
-/* Signs Section */
+
 .signs-section {
     padding: var(--section-spacing) 0;
     background-color: var(--light-gray-bg);
@@ -371,7 +369,7 @@ section:not(:first-child)::before {
     box-shadow: var(--box-shadow);
 }
 
-/* Special AC Area */
+
 .ac-special-area {
     padding: var(--section-spacing) 0;
     background: linear-gradient(135deg, #f0f4ff 0%, #e6f7fa 100%);
@@ -466,7 +464,7 @@ section:not(:first-child)::before {
     color: #606161;
 }
 
-/* Main Sections */
+
 .main-section {
     background-color:white;
     border-radius: var(--border-radius);
@@ -481,7 +479,6 @@ section:not(:first-child)::before {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Service Cards */
 .service-card {
     background-color:white;
     border-radius: var(--border-radius);
@@ -551,7 +548,7 @@ section:not(:first-child)::before {
     color:white;
 }
 
-/* Info Block */
+
 .info-block {
     padding: var(--section-spacing) 0;
     background-color: var(--light-gray-bg);
@@ -615,7 +612,7 @@ section:not(:first-child)::before {
     margin-bottom: 0;
 }
 
-/* Stats Section */
+
 #stats {
     padding: var(--section-spacing) 0;
     background: linear-gradient(135deg, var(--primary-dark-blue) 0%, var(--secondary-dark-blue) 100%);
@@ -686,7 +683,7 @@ section:not(:first-child)::before {
     color:white;
 }
 
-/* Key Features */
+
 #key-features-visual {
     padding: var(--section-spacing) 0;
     background-color:white;
@@ -721,7 +718,7 @@ section:not(:first-child)::before {
     margin-bottom: 1.5rem;
 }
 
-/* Area Padding */
+
 .area-padding {
     padding: var(--section-spacing) 0;
 }
@@ -758,14 +755,14 @@ section:not(:first-child)::before {
     color: #606161;
 }
 
-/* Container2 Styling */
+
 .container2 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* AC Types Cards */
+
 .col-md-3[style*="border: 3px solid"] {
     transition: all 0.3s ease;
     background-color:white;
@@ -796,7 +793,7 @@ section:not(:first-child)::before {
     border-radius: 1.5px;
 }
 
-/* Buttons */
+
 .btn {
     font-family: 'Tajawal', sans-serif;
     padding: 12px 25px;
@@ -852,7 +849,6 @@ section:not(:first-child)::before {
     color:white;
 }
 
-/* Floating WhatsApp Button */
 .floating-whatsapp {
     position: fixed;
     bottom: 30px;
@@ -882,7 +878,7 @@ section:not(:first-child)::before {
     color:white;
 }
 
-/* Footer Styling */
+
 footer {
     background-color: var(--primary-dark-blue);
     color:white;
@@ -1480,7 +1476,7 @@ footer .copyright {
             margin-bottom: 20px;
         }
         
-        /* AC Types */
+     
         .ac-types {
             padding: 50px 0;
         }
@@ -1579,17 +1575,17 @@ footer .copyright {
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(to right, rgba(26, 60, 135, 0.8), rgba(29, 193, 226, 0.6));
+            background: linear-gradient(to right, rgba(35, 63, 146, 0.8), rgba(29, 193, 226, 0.6));
             z-index: 1;
         }
 
-        .hero-install .container {
-            position: relative;
-            z-index: 2;
-            padding: 40px;
-            border-radius: var(--border-radius);
-            background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
+     .hero-install .container {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
         }
         
         .hero-install h1 {
