@@ -10,277 +10,12 @@
     <title>الكفاءة المتميزة للتبريد والتكييف</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-:root {
-    --primary-color: #254898;
-    --secondary-color: #53c8e6;
-    --primary-dark: #233f92;
-    --secondary-light: #1dc1e2;
-    --gray-text: #606161;
-    --light-gray: #828282;
-}
-        body {
-            font-family: 'Cairo', sans-serif;
-        }
-
-        .navbar {
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 15px 0;
-        }
-
-        .navbar-brand img {
-            height: 60px;
-            border-radius: 20px;
-        }
-
-        .nav-link {
-            color: #0d6a7a !important;
-            font-weight: 600;
-            font-size: 18px;
-            margin: 0 10px;
-        }
-
-        .nav-link:hover {
-            color: #0a9c9c !important;
-        }
-
-        .dropdown-menu {
-            background-color: #ffffff;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 10px 0;
-            min-width: 200px;
-            border: none;
-        }
-
-        .dropdown-item {
-            color: #0d6a7a;
-            font-weight: 500;
-            padding: 8px 20px;
-            text-align: right;
-        }
-
-        .dropdown-item:hover {
-            background-color: #f8f9fa;
-            color: #0a9c9c;
-        }
-
-        .phone-number {
-            background-color: #0d9d92;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-        }
-
-        .phone-number:hover {
-            background-color: #0a8278;
-            color: white;
-        }
-
-        .phone-icons {
-            margin-left: 5px;
-        }
-
-        .hero-section {
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            position: relative;
-            min-height: 600px;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .hero-section:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(to right, rgba(13, 106, 122, 0.8), rgba(10, 157, 146, 0.6));
-            z-index: 1;
-        }
-
-        .hero-section .container {
-            position: relative;
-            z-index: 2;
-            padding: 40px;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-        }
-
-        .section-title {
-            color: #254898;
-            margin-bottom: 40px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-
-        .section-title:after {
-            content: '';
-            position: absolute;
-            width: 60px;
-            height: 3px;
-            background-color: #53c8e6;
-            bottom: 0;
-            right: 0;
-        }
-
-        .service-card {
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 25px;
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-
-        .service-card:hover {
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transform: translateY(-5px);
-        }
-
-        .icon-wrapper {
-            width: 70px;
-            height: 70px;
-            background-color: #53c8e6;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-        }
-
-        .icon-wrapper i {
-            font-size: 30px;
-            color: white;
-        }
-
-        .btn-primary {
-            background-color: #254898;
-            border-color: #254898;
-        }
-
-        .btn-primary:hover {
-            background-color: #233f92;
-            border-color: #233f92;
-        }
-
-        .why-us {
-            background-color: #f9f9f9;
-            padding: 80px 0;
-        }
-
-        .why-us-item {
-            margin-bottom: 30px;
-        }
-
-        .testimonials {
-            background-color: #254898;
-            color: white;
-            padding: 80px 0;
-        }
-
-        .footer {
-            background-color: #222;
-            color: white;
-            padding: 60px 0 30px;
-        }
-
-        .footer-links h5 {
-            color: #53c8e6;
-            margin-bottom: 20px;
-        }
-
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-links ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links ul li a {
-            color: #ddd;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links ul li a:hover {
-            color: #53c8e6;
-        }
-
-        .copyright {
-            border-top: 1px solid #444;
-            padding-top: 20px;
-            margin-top: 40px;
-        }
-
-        .social-links a {
-            display: inline-block;
-            width: 36px;
-            height: 36px;
-            background-color: #444;
-            color: white;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            background-color: #53c8e6;
-            transform: translateY(-3px);
-        }
-
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            z-index: 100;
-            transition: all 0.3s ease;
-        }
-
-        .whatsapp-float:hover {
-            background-color: #128c7e;
-            transform: scale(1.1);
-        }
-
-        .ac-image {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header -->
+
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
 
@@ -317,7 +52,7 @@
                     </li>
                 </ul>
 
-                <a href="tel:0508068844" class="phone-number" title="اتصل الآن لخدمة تنظيف المكيفات">
+                <a href="tel:0545828253" class="phone-number" title="اتصل الآن لخدمة تنظيف المكيفات">
                     <span class="phone-icons">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -330,27 +65,28 @@
         </div>
     </nav>
 
-
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="check-hero-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 mx-auto text-center">
-                    <h1 class="display-4 fw-bold mb-4">فحص الغاز خدمة موثوقة لسلامتك وأمان منزلك</h1>
-                    <p class="lead mb-4">كن آمنًا من خطر تسرب الغاز، نقدم لك خدمة فحص دقيقة وآمنة بأيدي فنيين متخصصين
-                        يضمنون سلامة الأجهزة والأنظمة المنزلية، الكشف عن أي تسريبات أو مشكلات قد تهدد سلامتك.</p>
-                    <a href="#contact" class="btn btn-primary btn-lg">واتساب</a>
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="wash-hero-content">
+                        <h1 class="wash-hero-title">خدمة فحص الغاز للمكيفات بأحدث المعدات وأسعار منافسة</h1>
+                        <p class="wash-hero-text">نقدم خدمة متخصصة لفحص غاز المكيفات للتأكد من سلامة المكيف وكفاءة أدائه. فريق متخصص من الفنيين يستخدم أحدث المعدات للكشف عن أي مشكلات محتملة في نظام الغاز بالمكيف.</p>
+                        <a href="https://wa.me/966545828253" class="cta-btn">واتساب الآن</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="py-5" id="services">
+    <section class="py-5">
         <div class="container">
-            <h2 class="text-center section-title">خدماتنا في فحص الغاز</h2>
-
+            <h2 class="section-title text-center">خدمات فحص غاز المكيفات</h2>
             <div class="row">
+                
+                <!-- Keep existing service cards but update styling as needed -->
                 <div class="col-md-6 mb-4">
                     <div class="service-card text-center">
                         <div class="icon-wrapper">
@@ -585,6 +321,71 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>معلومات التواصل</h3>
+                    <!-- === Update with actual contact details === -->
+                    <p><i class="fas fa-map-marker-alt fa-fw me-2"></i> العنوان: جدة، المملكة العربية السعودية</p>
+                    <p><i class="fas fa-phone fa-fw me-2"></i> الهاتف الاول: <a
+                            href="tel:+9660562488492">0562488492</a></p>
+                    <p><i class="fas fa-phone fa-fw me-2"></i> الهاتف الثاني: <a
+                            href="tel:+9660562488492">0545828253</a></p>
+                    <p><i class="fab fa-whatsapp fa-fw me-2"></i> واتساب: <a href="https://wa.me/0545828253"
+                            target="_blank">0545828253</a></p>
+                    <p><i class="fas fa-envelope fa-fw me-2"></i> البريد الإلكتروني: <a
+                            href="mailto:Info@kafaalmetmiza.com">Info@kafaalmetmiza.com</a></p>
+                    <h4 class="mt-4 mb-3">ساعات العمل</h4>
+                    <p><i class="fas fa-clock fa-fw me-2"></i> السبت - الخميس: 10:30 صباحًا - 10:00 مساءً</p>
+                    <p><i class="fas fa-clock fa-fw me-2"></i>الجمعة :اجازة </p>
+                </div>
+                <div class="col-md-6">
+                    <h3>أرسل لنا رسالة مباشرة</h3>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">الاسم<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="اسمك الكامل"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">رقم الهاتف<span
+                                    class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="05XXXXXXXX"
+                                required pattern="[0-9]{10}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني (اختياري)</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="example@domain.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="service_type" class="form-label">نوع الخدمة المطلوبة (اختياري)</label>
+                            <select class="form-select" id="service_type" name="service_type">
+                                <option selected disabled value="">-- اختر الخدمة --</option>
+                                <option value="تنظيف مكيف سبليت">تنظيف مكيف سبليت</option>
+                                <option value="تنظيف مكيف شباك">تنظيف مكيف شباك</option>
+                                <option value="تنظيف مكيف مركزي/دكت">تنظيف مكيف مركزي/دكت</option>
+                                <option value="صيانة مكيف">صيانة مكيف</option>
+                                <option value="فحص واستشارة">فحص واستشارة</option>
+                                <option value="اخرى">أخرى (اذكرها في الرسالة)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">رسالتك<span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" name="message" rows="5"
+                                placeholder="اكتب استفسارك أو تفاصيل الخدمة المطلوبة هنا..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 btn-lg">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer py-5">
         <div class="container">
             <div class="row g-4">
@@ -643,37 +444,8 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+    <script src="script.js"></script>
+</body>
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add active class to navbar items on scroll
-        window.addEventListener('scroll', function () {
-            let scrollPosition = window.scrollY;
-
-            document.querySelectorAll('section').forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                const sectionHeight = section.offsetHeight;
-                const sectionId = section.getAttribute('id');
-
-                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                    document.querySelectorAll('.nav-link').forEach(link => {
-                        link.classList.remove('active');
-                        if (link.getAttribute('href') === '#' + sectionId) {
-                            link.classList.add('active');
-                        }
-                    });
-                }
-            });
-        });
-    </script>
+</html>

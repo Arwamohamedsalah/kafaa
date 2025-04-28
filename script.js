@@ -1,3 +1,94 @@
+// Main JavaScript file for Kafaa website
+
+// When page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.getAttribute('href') !== '#' && this.getAttribute('href') !== '#navbarNav') {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // Add active class to navbar items on scroll
+    window.addEventListener('scroll', function () {
+        let scrollPosition = window.scrollY;
+
+        document.querySelectorAll('section[id]').forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + sectionId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    });
+
+    // Initialize Bootstrap tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+
+    // Form validation
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            } else {
+                // You can add AJAX form submission here
+                alert('تم إرسال رسالتك بنجاح، سنتواصل معك قريباً.');
+                event.preventDefault(); // Prevent actual submission for demo
+            }
+            form.classList.add('was-validated');
+        });
+    });
+
+    // Navbar active state
+    const currentLocation = location.pathname;
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (linkPath && currentLocation.includes(linkPath) && linkPath !== '#' && linkPath !== 'index.html') {
+            link.classList.add('active');
+        } else if (currentLocation.endsWith('/') || currentLocation.endsWith('index.html')) {
+            // Make home link active if on index page
+            if (linkPath === 'index.html' || linkPath === './') {
+                link.classList.add('active');
+            }
+        }
+    });
+
+    // Whatsapp floating button functionality
+    const floatingWhatsapp = document.querySelector('.floating-whatsapp');
+    if (floatingWhatsapp) {
+        floatingWhatsapp.addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.1)';
+        });
+        
+        floatingWhatsapp.addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1)';
+        });
+    }
+});
+
 // Form submission handling
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
@@ -22,20 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.reset();
         });
     }
-});
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
 });
 
 // Navbar background color change on scroll

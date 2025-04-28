@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -59,7 +59,7 @@
         </div>
     </nav>
 
-    <section class="hero-install">
+    <section class="installation-hero-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -249,7 +249,71 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>معلومات التواصل</h3>
+                    <!-- === Update with actual contact details === -->
+                    <p><i class="fas fa-map-marker-alt fa-fw me-2"></i> العنوان: جدة، المملكة العربية السعودية</p>
+                    <p><i class="fas fa-phone fa-fw me-2"></i> الهاتف الاول: <a
+                            href="tel:+9660562488492">0562488492</a></p>
+                    <p><i class="fas fa-phone fa-fw me-2"></i> الهاتف الثاني: <a
+                            href="tel:+9660562488492">0545828253</a></p>
+                    <p><i class="fab fa-whatsapp fa-fw me-2"></i> واتساب: <a href="https://wa.me/0545828253"
+                            target="_blank">0545828253</a></p>
+                    <p><i class="fas fa-envelope fa-fw me-2"></i> البريد الإلكتروني: <a
+                            href="mailto:Info@kafaalmetmiza.com">Info@kafaalmetmiza.com</a></p>
+                    <h4 class="mt-4 mb-3">ساعات العمل</h4>
+                    <p><i class="fas fa-clock fa-fw me-2"></i> السبت - الخميس: 10:30 صباحًا - 10:00 مساءً</p>
+                    <p><i class="fas fa-clock fa-fw me-2"></i>الجمعة :اجازة </p>
+                </div>
+                <div class="col-md-6">
+                    <h3>أرسل لنا رسالة مباشرة</h3>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">الاسم<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="اسمك الكامل"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">رقم الهاتف<span
+                                    class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="05XXXXXXXX"
+                                required pattern="[0-9]{10}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني (اختياري)</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="example@domain.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="service_type" class="form-label">نوع الخدمة المطلوبة (اختياري)</label>
+                            <select class="form-select" id="service_type" name="service_type">
+                                <option selected disabled value="">-- اختر الخدمة --</option>
+                                <option value="تنظيف مكيف سبليت">تنظيف مكيف سبليت</option>
+                                <option value="تنظيف مكيف شباك">تنظيف مكيف شباك</option>
+                                <option value="تنظيف مكيف مركزي/دكت">تنظيف مكيف مركزي/دكت</option>
+                                <option value="صيانة مكيف">صيانة مكيف</option>
+                                <option value="فحص واستشارة">فحص واستشارة</option>
+                                <option value="اخرى">أخرى (اذكرها في الرسالة)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">رسالتك<span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" name="message" rows="5"
+                                placeholder="اكتب استفسارك أو تفاصيل الخدمة المطلوبة هنا..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 btn-lg">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer class="footer py-5">
         <div class="container">
             <div class="row g-4">
@@ -307,7 +371,6 @@
     <a href="https://wa.me/966545828253" class="floating-whatsapp" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
