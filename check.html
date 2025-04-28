@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="الكفاءة المتميزة للتبريد والتكييف - مؤسسة سعودية رائدة في خدمات التبريد والتكييف للمنازل والشركات">
+    <meta name="keywords" content="تبريد, تكييف, صيانة تكييف, تركيب مكيفات, الكفاءة المتميزة">
+    <title>الكفاءة المتميزة للتبريد والتكييف</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+:root {
+    --primary-color: #254898;
+    --secondary-color: #53c8e6;
+    --primary-dark: #233f92;
+    --secondary-light: #1dc1e2;
+    --gray-text: #606161;
+    --light-gray: #828282;
+}
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+        }
+
+        .navbar-brand img {
+            height: 60px;
+            border-radius: 20px;
+        }
+
+        .nav-link {
+            color: #0d6a7a !important;
+            font-weight: 600;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        .nav-link:hover {
+            color: #0a9c9c !important;
+        }
+
+        .dropdown-menu {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            min-width: 200px;
+            border: none;
+        }
+
+        .dropdown-item {
+            color: #0d6a7a;
+            font-weight: 500;
+            padding: 8px 20px;
+            text-align: right;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #0a9c9c;
+        }
+
+        .phone-number {
+            background-color: #0d9d92;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .phone-number:hover {
+            background-color: #0a8278;
+            color: white;
+        }
+
+        .phone-icons {
+            margin-left: 5px;
+        }
+
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .hero-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(13, 106, 122, 0.8), rgba(10, 157, 146, 0.6));
+            z-index: 1;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+            padding: 40px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .section-title {
+            color: #254898;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #53c8e6;
+            bottom: 0;
+            right: 0;
+        }
+
+        .service-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background-color: #53c8e6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .icon-wrapper i {
+            font-size: 30px;
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: #254898;
+            border-color: #254898;
+        }
+
+        .btn-primary:hover {
+            background-color: #233f92;
+            border-color: #233f92;
+        }
+
+        .why-us {
+            background-color: #f9f9f9;
+            padding: 80px 0;
+        }
+
+        .why-us-item {
+            margin-bottom: 30px;
+        }
+
+        .testimonials {
+            background-color: #254898;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-links h5 {
+            color: #53c8e6;
+            margin-bottom: 20px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: #53c8e6;
+        }
+
+        .copyright {
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background-color: #444;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #53c8e6;
+            transform: translateY(-3px);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+        }
+
+        .ac-image {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html" title="الكفاءه المتميزه لأعمال التكييف">
+                <img src="pic/kafaa.jpg" alt="شعار الكفاءه المتميزه لأعمال التكييف" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" title="خدمات تنظيف المكيفات">
+                            خدمات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="installation.html" title="تركيب مكيفات">تركيب مكيفات</a></li>
+                            <li><a class="dropdown-item" href="wash.html" title="غسيل مكيفات">غسيل مكيفات</a></li>
+                            <li><a class="dropdown-item" href="replace.html" title="استبدال مكيفات">استبدال مكيفات</a></li>
+                            <li><a class="dropdown-item" href="check.html" title="فحص الغاز">فحص الغاز</a></li>
+                            <li><a class="dropdown-item" href="refill.html" title="تعبئة فريون مكيف">تعبئة فريون مكيف</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" title="من نحن الكفاءه المتميزه لأعمال التكييف">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" title="اتصل بنا للحصول على خدمات تنظيف المكيفات">اتصل
+                            بنا</a>
+                    </li>
+                </ul>
+
+                <a href="tel:0508068844" class="phone-number" title="اتصل الآن لخدمة تنظيف المكيفات">
+                    <span class="phone-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                    </span>
+                    0545828253 </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">فحص الغاز خدمة موثوقة لسلامتك وأمان منزلك</h1>
+                    <p class="lead mb-4">كن آمنًا من خطر تسرب الغاز، نقدم لك خدمة فحص دقيقة وآمنة بأيدي فنيين متخصصين
+                        يضمنون سلامة الأجهزة والأنظمة المنزلية، الكشف عن أي تسريبات أو مشكلات قد تهدد سلامتك.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">واتساب</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5" id="services">
+        <div class="container">
+            <h2 class="text-center section-title">خدماتنا في فحص الغاز</h2>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="service-card text-center">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>اختبار كفاءة أنظمة الغاز</h3>
+                        <p>فحص شامل لأنظمة الغاز المنزلية والتجارية والتأكد من أنها تعمل بكفاءة وأمان، مع تقديم توصيات
+                            للتحسين الأداء وضمان الامتثال للمعايير المعتمدة.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="service-card text-center">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>كشف تسربات الغاز بدقة متناهية</h3>
+                        <p>التسربات غير المرئية قد تكون خطيرة، لذلك نستخدم أحدث التقنيات والأجهزة المتطورة لاكتشاف أي
+                            تسرب مهما كان صغيراً، مما يمنحك راحة البال.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="service-card text-center">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>تقرير فني شامل بعد الفحص</h3>
+                        <p>بعد كل فحص، نقدم تقريراً مفصلاً يوضح حالة النظام مع توضيح أي مشاكل محتملة وحلول متابعة لضمان
+                            العمل الآمن والمثالي.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="service-card text-center">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>صيانة دورية للحفاظ على الأمان</h3>
+                        <p>نقدم خدمات صيانة دورية لأنظمة الغاز، مما يساعد في منع الأعطال المحتملة وتقليل مخاطر التسربات
+                            ما يضمن استمرارية عمل الأنظمة دون مشاكل.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-5 bg-light" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">من نحن</h2>
+                    <p class="mb-4">مؤسسة سعودية رائدة في حلول التبريد والتكييف متخصصين في تقديم خدمات التكييف المتكاملة
+                        للمنازل والشركات نحرص على تقديم أعلى مستويات الجودة والابتكار في جميع منتجاتها وخدماتها.</p>
+
+                    <h3 class="h4 mb-3">رؤيتنا</h3>
+                    <p class="mb-4">أن نكون الخيار الأول في مجال التكييف والتبريد من خلال توفير حلول مبتكرة وفعالة تساهم
+                        في تحسين جودة الحياة.</p>
+
+                    <h3 class="h4 mb-3">رسالتنا</h3>
+                    <p class="mb-4">نقدم خدمات التكييف والتبريد عالية الجودة بأسعار تنافسية، والالتزام بأعلى معايير
+                        السلامة والجودة في جميع أعمالنا كما نسعى لتحقيق رضا العملاء من خلال الدعم المستمر والتطوير
+                        المستدام لخدماتنا.</p>
+
+                    <h3 class="h4 mb-3">قيمنا</h3>
+                    <ul>
+                        <li><strong>الجودة:</strong> تقديم أفضل الخدمات والمنتجات بأعلى معايير الجودة.</li>
+                        <li><strong>الاحترافية:</strong> العمل بمهنية واحترافية في جميع مراحل الخدمة.</li>
+                        <li><strong>الابتكار:</strong> تبني أحدث التقنيات والابتكارات في مجال التكييف والتبريد.</li>
+                        <li><strong>الاستدامة:</strong> الالتزام بممارسات صديقة للبيئة ومستدامة.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/600/400" alt="فريق الكفاءة المتميزة للتبريد والتكييف"
+                        class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="text-center section-title">لماذا تختار خدمتنا؟</h2>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 why-us-item">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5">تقنيات حديثة وقطع غيار عالية</h3>
+                            <p>نستخدم معدات متطورة لاختبار فحص دقيق لكل جزء من نظام الغاز.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 why-us-item">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-users-cog fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5">فريق محترف ومؤهل على أعلى مستوى</h3>
+                            <p>مهندسون وفنيون مدربون على التعامل مع جميع أنواع أنظمة الغاز.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 why-us-item">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-clipboard-check fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5">التزام بمعايير الأمان والجودة</h3>
+                            <p>نطبق أعلى المعايير الدولية لضمان أعلى درجات الأمان وجودة الخدمة المقدمة.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 why-us-item">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-hand-holding-usd fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5">أسعار تنافسية وعروض خاصة</h3>
+                            <p>نوفر أسعار منافسة مع عروض خاصة للفحص الدوري وإصلاحات الطوارئ.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 why-us-item">
+                    <div class="d-flex align-items-start">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-clock fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5">خدمة سريعة واستجابة فورية</h3>
+                            <p>نوفر حلولاً سريعة ومتابعة لتلبية احتياجاتك دون تأخير.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services in Detail -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">خدماتنا</h2>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3>تركيب وصيانة مكيفات الهواء المنزلية:</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-primary me-2"></i> تركيب مكيفات الشباك، والمكيفات المنفصلة
+                            (سبليت)</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> خدمات الصيانة والإصلاح لجميع أنواع مكيفات
+                            الهواء.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/550/350" alt="تركيب وصيانة مكيفات الهواء"
+                        class="img-fluid rounded shadow ac-image">
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3>تركيب وصيانة أنظمة التكييف المركزي:</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-primary me-2"></i> تركيب أنظمة التكييف المركزي للمباني السكنية
+                            والتجارية.</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> صيانة وإصلاح جميع أنواع أنظمة التكييف
+                            المركزي.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/550/350" alt="تركيب وصيانة أنظمة التكييف المركزي"
+                        class="img-fluid rounded shadow ac-image">
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3>أنظمة التبريد الصناعي:</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-primary me-2"></i> تصميم وتركيب أنظمة التبريد للمصانع
+                            والمستودعات والمرافق الصناعية.</li>
+                        <li><i class="fas fa-check text-primary me-2"></i> صيانة وإصلاح أنظمة التبريد الصناعي.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/api/placeholder/550/350" alt="أنظمة التبريد الصناعي"
+                        class="img-fluid rounded shadow ac-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="text-center text-white mb-5">آراء عملائنا</h2>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead">عملائنا هم سر نجاحنا، فقد قدمنا خدماتنا لعدد كبير من الأفراد والشركات الذين أشادوا
+                        بدقة العمل وجودة الخدمة مع توصيات مستمرة لعملائنا بأكملها لتفاصيل خدمات فحص الغاز.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mb-4 mb-lg-0">
+                    <h2>احجز موعد فحص الغاز الآن</h2>
+                    <p class="lead mb-0">إذا كنت بحاجة للخدمة تواصل الآن مع خدمة عملاء الكفاءة المتميزة للغاز مع فريقنا
+                        المختصين واستمتع براحة البال مع الحفاظ بشكل كامل على سلامتك وسلامتك في منزلك على الفور.</p>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <a href="#" class="btn btn-primary btn-lg">واتساب</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5>مؤسسة الكفاءة المتميزة لاعمال التكييف</h5>
+                    <p>نقدم خدمات احترافية في مجال تنظيف وصيانة وتركيب المكيفات في جدة والمناطق المجاورة. نلتزم
+                        بتقديم أعلى معايير الجودة لضمان رضا عملائنا.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html"><i class="fas fa-angle-left me-2"></i>الرئيسية</a></li>
+                        <li><a href="index.html#services"><i class="fas fa-angle-left me-2"></i>خدماتنا</a></li>
+                        <li><a href="about.html"><i class="fas fa-angle-left me-2"></i>من
+                                نحن</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-angle-left me-2"></i>اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>مناطق الخدمة</h5>
+                    <p>نقدم خدماتنا في جميع أحياء جدة بما في ذلك:</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-areas">
+                                <li><i class="fas fa-map-marker-alt me-2"></i>حي الروضة</li>
+                                <li><i class="fas fa-map-marker-alt me-2"></i>حي السلامة</li>
+                                <li><i class="fas fa-map-marker-alt me-2"></i>حي الفيحاء</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled footer-areas">
+                                <li><i class="fas fa-map-marker-alt me-2"></i>حي النزهة</li>
+                                <li><i class="fas fa-map-marker-alt me-2"></i>حي الصفا</li>
+                                <li><i class="fas fa-map-marker-alt me-2"></i>حي المروة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">حقوق النشر © 2025 مؤسسة الكفاءة المتميزة لاعمال التكييف. جميع الحقوق محفوظة.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/966545828253" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add active class to navbar items on scroll
+        window.addEventListener('scroll', function () {
+            let scrollPosition = window.scrollY;
+
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
