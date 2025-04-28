@@ -1220,7 +1220,6 @@ footer .copyright {
         display: block;
     }
     
-    /* Improved touch targets for mobile */
     .navbar-nav .nav-link,
     footer ul li a,
     .dropdown-item {
@@ -1232,7 +1231,6 @@ footer .copyright {
         height: 45px;
     }
     
-    /* Improved spacing for mobile */
     section {
         padding: 40px 0;
     }
@@ -1241,7 +1239,6 @@ footer .copyright {
         margin-bottom: 1.5rem;
     }
     
-    /* Better card display on mobile */
     .card {
         margin-bottom: 20px;
     }
@@ -1250,7 +1247,6 @@ footer .copyright {
         height: 200px;
     }
     
-    /* Improved hero section for mobile */
     #hero {
         min-height: 400px;
         padding: 60px 0;
@@ -1261,7 +1257,6 @@ footer .copyright {
     }
 }
 
-/* Extra small devices */
 @media (max-width: 375px) {
     h1 { font-size: 1.6rem; }
     h2 { font-size: 1.4rem; }
@@ -1298,7 +1293,6 @@ footer .copyright {
 }
 
 
-               /* تنسيق قسم الأحياء */
                #areas-covered {
                 background-color: #f8f9fa;
                 position: relative;
@@ -1412,15 +1406,54 @@ footer .copyright {
         }
 
         .hero-about-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./صيانة-مكيفات-بجدةback-img-desk\ \(1\).webp');
             background-size: cover;
             background-position: center;
-            color: rgb(255, 255, 255);
-            padding: 50px 0;
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary-dark-blue) 0%, var(--secondary-dark-blue) 100%);
+            margin-bottom: 2rem;
             text-align: center;
         }
 
-                /* CTA */
+        .hero-about-section:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(26, 60, 135, 0.8), rgba(29, 193, 226, 0.6));
+            z-index: 1;
+        }
+
+        .hero-about-section .container {
+            position: relative;
+            z-index: 2;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+        
+        .hero-about-section h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero-about-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
                 .cta {
                     background-color: #f8f9fa;
                     padding: 50px 0;
@@ -1469,14 +1502,12 @@ footer .copyright {
             padding: 20px;
         }
         
-        /* Maintenance */
         .maintenance {
             background-color: #233f92 !important;
             color: rgb(255, 255, 255);
             padding: 50px 0;
         }
         
-        /* Why Choose Us */
         .why-us {
             padding: 50px 0;
         }
@@ -1496,7 +1527,6 @@ footer .copyright {
         }
 
         
-        /* Services */
         .services {
             padding: 50px 0;
         }
@@ -1529,20 +1559,60 @@ footer .copyright {
         }
         
         .hero-install {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1581502335766-48f7c5e7e640?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 80px 0;
+            padding: 100px 0;
+            position: relative;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary-dark-blue) 0%, var(--secondary-dark-blue) 100%);
+            margin-bottom: 2rem;
             text-align: center;
+        }
+
+        .hero-install:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(26, 60, 135, 0.8), rgba(29, 193, 226, 0.6));
+            z-index: 1;
+        }
+
+        .hero-install .container {
+            position: relative;
+            z-index: 2;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
         }
         
         .hero-install h1 {
-            font-weight: bold;
-            margin-bottom: 20px;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         
         .hero-install p {
-            margin-bottom: 30px;
-            font-size: 18px;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .cta-btn {
+            background-color: var(--secondary-color); 
+            color: white;
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s;
         }
